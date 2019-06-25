@@ -1,15 +1,3 @@
-//import java.io.*;
-//
-//public class Test
-//{
-//	String stuff;
-//	public static void main(String args[])throws Exception
-//	{
-//		BufferedReader in = new BufferedReader(new FileReader("/goinfre/rdube/Documents/Java/Avaj-Launcher/input.txt"));
-//		System.out.print(BufferedReader);
-//	}
-//}
-
 import java.io.*;
 import java.util.Scanner;
 
@@ -21,7 +9,7 @@ public class Test
 		String filename;
 		Scanner scan = new Scanner(System.in);
 
-		System.out.print("Enter sen (with extension like file.txt) : ");
+		System.out.print("File scenario name? eg. input.txt: ");
 		filename = scan.nextLine();
 //		filename = "/goinfre/rdube/Documents/Java/Avaj-Launcher/input.txt";
 
