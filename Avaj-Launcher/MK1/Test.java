@@ -12,19 +12,17 @@ public class Test
 		System.out.print("File scenario name? eg. input.txt: ");
 		filename = scan.nextLine();
 //		filename = "/goinfre/rdube/Documents/Java/Avaj-Launcher/input.txt";
-
 		String line = null;
 		try
 		{
 
 			FileReader fileReader = new FileReader(filename);
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
-
 			while((line = bufferedReader.readLine()) != null)
 			{
 				System.out.println(line);
 			}
-
+			System.out.println(path);
 			bufferedReader.close();
 		}
 		catch(IOException ex)

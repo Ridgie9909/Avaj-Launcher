@@ -10,10 +10,13 @@ public class lols
         FileInputStream fis = null;
         path currentRelativePath = Paths.get("");
         String file_location = currentRelativePath.toAbsolutePath.toString();
+        File file = new File("hello.c");
+		String path = file.getAbsolutePath();
         try
         {
             System.out.println(System.getProperty("user.dir"));
             fis = new FileInputSystem(file_location);
+            
         }
         catch(Exception ex)
         {
