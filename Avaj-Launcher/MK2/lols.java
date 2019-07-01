@@ -8,7 +8,7 @@ public class lols
     public static void main(String args[]) throws IOException
     {
         FileInputStream fis = null;
-        path currentRelativePath = Paths.get("");
+        // path currentRelativePath = Paths.get("");
         String file_location = currentRelativePath.toAbsolutePath.toString();
         File file = new File("hello.c");
 		String path = file.getAbsolutePath();

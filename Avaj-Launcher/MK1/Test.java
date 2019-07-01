@@ -15,7 +15,6 @@ public class Test
 		String line = null;
 		try
 		{
-
 			FileReader fileReader = new FileReader(filename);
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
 			while((line = bufferedReader.readLine()) != null)
