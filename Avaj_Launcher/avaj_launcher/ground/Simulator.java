@@ -1,9 +1,10 @@
+package avaj_launcher.ground;
 import java.io.*;
 import java.util.*;
 import java.lang.*;
 import avaj_launcher.aircraft.*;
 import avaj_launcher.sky.*;
-package avaj_launcher.ground;
+
 
 public class Simulator
 {
@@ -25,12 +26,12 @@ public class Simulator
             {
                 weatherTower = new WeatherTower();
                 int simulations = Integer.parseInt(line.split(" ")[0]);
-                if simulations < 0)
+                if (simulations < 0)
                 {
                     System.out.print("We can't simulate "+ simulations +" increase simulation count.");
-                    System.exit(1)
+                    System.exit(1);
                 }
-                while(line = bufferedReader.readLine()) != null)
+                while(line = bufferedReader.readLine() != null)
                 {
                     AircraftFactory aircraftF = new AircraftFactory();
                     Flyable flyable = aircraftF.newAircraft(line.split(" ")[0], line.split(" ")[1], Integer.parseInt(line.split(" ")[2]), Integer.parseInt(line.split(" ")[3]), Integer.parseInt(line.split(" ")[4]));
